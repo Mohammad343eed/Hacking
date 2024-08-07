@@ -1,0 +1,149 @@
+body {
+    background-repeat: no-repeat;
+    direction: rtl;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---------- header ---------- */
+
+header {
+    padding: 20px;
+    background-color: #575558;
+}
+
+header h1 {
+    margin-left: 5%;
+    color: #fff;
+}
+
+
+header h1 span.col {
+    color: rgb(255, 174, 0);
+}
+
+header nav {
+    text-align: right;
+    margin: 0 5% 0 0;
+}
+
+header nav ul li {
+    display: inline;
+    position:relative;
+    margin: 10px;
+    bottom: 15px;
+    right: 80%;
+}
+
+header nav ul li a {
+    text-decoration:none;
+    color: #fff;
+}
+
+header nav ul li a:hover {
+    font-weight: 700;
+    color: rgb(255, 174, 0);
+}
+
+header nav ul li a.cbtn {
+    color: rgb(255, 174, 0);
+}
+
+header nav ul li a.btn {
+    background-color: rgb(255, 174, 0);
+    color: #fff;
+    padding: 15px 22px;
+    border-radius: 30px;
+}
+
+header nav ul li a.btn:hover {
+    background-color: #726e74;
+}
+
+/* ---------- section ---------- */
+
+section {
+    width: 100%;
+    height: 600px;
+  background-image: url(images/gallery3.jpg);
+    background-size:cover;
+    position: relative;
+}
+
+section div.img {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: .5;
+}
+
+section div.par {
+    position: absolute;
+    text-align: center;
+    top: 200px;
+    right: 40%;
+    color: white;
+}
+
+section p {
+  font-weight: 700;
+}
+
+section h1 {
+    font-size: 45px;
+}
+
+section a:hover {
+    font-weight: 700;
+    background-color: #4b474c;
+}
+
+section a {
+    text-decoration:double;
+    background-color: rgb(255, 174, 0);
+    color: #fff;
+    padding: 15px 32px;
+    border-radius: 30px;
+}
+
+footer {
+    background-color: #575558;
+}
+
+footer div {
+    color: rgb(255, 174, 0);
+    position: relative;
+    font-size:xx-large;
+}
+
+footer h4 {
+    color: rgb(255, 174, 0);
+    position: relative;
+}
+
+footer ul {
+    list-style-type: none;
+    display: inline-flex;
+}
+
+footer ul li a {
+    margin: 5px;
+}
+
+footer ul li a img {
+    width: 50px;
+    height: 25px;
+    position: relative;
+    right:50px;
+    bottom: 20px;
+}
+
+footer ul li a img:hover {
+    width: 70px;
+    height: 40px;
+    transition: all 0.5s ease-in-out;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <title>تسجيل الدخول</title>
+    <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+
+    <header>
+        
+        
+        <nav>
+            <ul>
+                <li> <a href="index.html" class="cbtn"> الرئيسية </a> </li>
+                <li> <a href="index.html#cont"> اتصل بنا </a> </li>
+                <li> <a href="login.html" class="btn">تسجيل الدخول </a> </li>
+                <li><h1> نادي <span class="col"> القوة الرياضي</span> </h1></li>
+            </ul>
+        </nav>
+    </header>
+
+    <form action="index.php" method="get" autocomplete="on" enctype="multipart/form-data">
+        <fieldset>
+            <legend>استمارة تسجيل المتدربين</legend>
+            <div>
+                <label for="trainee_name">اسم المتدرب</label>
+                <input type="text" required id="trainee_name" placeholder="اكتب اسمك">
+            </div>
+            <div>
+                <label for="trainee_age">العمر</label>
+                <input type="number" required id="trainee_age" maxlength="2" min="15" placeholder="أدخل عمرك">
+            </div>
+            <div class="gender">
+                <label>الجنس</label>
+                <input type="radio" required id="male" name="gender" value="ذكر" checked>
+                <label for="male" class="gender">ذكر</label>
+                <input type="radio" required id="female" name="gender" value="أنثى" checked>
+                <label for="female" class="gender">أنثى</label>
+            </div>
+            <div>
+                <label for="trainee_email">البريد الالكتروني</label>
+                <input type="email" required id="trainee_email" placeholder="أدخل حسابك">
+            </div>
+            <div>
+                <label for="trainee_phone">رقم التلفون</label>
+                <input type="tel" required id="trainee_phone" maxlength="9" placeholder="أدخل رقمك">
+            </div>
+            <div>
+                <label for="payment">وسيلة الدفع</label>
+                <input type="text" required id="payment" list="list_pay">
+                <datalist id="list_pay">
+                    <option value="نقداً"></option>
+                    <option value="VISA"></option>
+                    <option value="بطاقة ائتمان"></option>
+                    <option value="PayPal"></option>
+                </datalist>
+            </div>
+            <div>
+                <input class="bot" type="submit" value="تسجيل">
+            </div>
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

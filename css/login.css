@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0;
+    font-family: 'cairo';
+}
+
+body {
+    width: 100%;
+    direction: rtl;
+    background-color: rgb(107, 187, 249);
+}
+
+/* ================== header ===================== */
+
+header {
+    width: 100%;
+    padding: 20px;
+    background-color: #575558;
+}
+
+header li h1 {
+    display: inline;
+    margin-right: 10%;
+    color: #fff;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+header h1 span.col {
+    color: rgb(255, 174, 0);
+}
+
+header nav ul li {
+    display: inline;
+    position: relative;
+    margin: 10px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+header nav ul li a:hover {
+    font-weight: 700;
+    color: rgb(255, 174, 0);
+}
+
+header nav ul li a.cbtn {
+    color: rgb(255, 174, 0);
+}
+
+header nav ul li a.btn {
+    background-color: rgb(255, 174, 0);
+    color: #fff;
+    padding: 15px 22px;
+    border-radius: 30px;
+}
+
+header nav ul li a.btn:hover {
+    background-color: #726e74;
+}
+
+fieldset {
+    display: block;
+    position: relative;
+    right: 30%;
+    margin-top: 100px;
+    transform: scale(1.2);
+    width: fit-content;
+    display: flex;
+    flex-flow: column;
+    border: 1px solid transparent;
+}
+
+fieldset div {
+    width: fit-content;
+    position: relative;
+}
+
+input,
+label {
+    margin: 5px;
+    display: block;
+}
+
+label.gender {
+    display: inline;
+}
+
+input#male,
+input#female {
+    display: inline;
+    position: relative;
+}
+
+
+div.gender {
+    border-bottom: 1px solid yellow;
+    border-radius: 16px;
+    background-color: #fff;
+    padding: 0 157px;
+
+}
+
+
+
+label {
+
+    text-align: center;
+}
+
+input {
+    outline:none;
+    padding: 10px 150px;
+    text-align: center;
+    background-color: #fff;
+    border: none;
+    border-bottom: 1px solid yellow;
+    border-radius: 16px;
+
+}
+
+legend {
+    padding: 10px 30px;
+    text-align: center;
+    font-size: 30px;
+    border-bottom: 3px solid yellow;
+    margin: 10px;
+    border-radius: 16px;
+}
+
+input.bot {
+    padding: 10px 199px;
+    background-color: yellow;
+    border-bottom: 1px solid;
+
+}
+
+input:focus {
+    background-color: rgba(255, 255, 255, 0.46);
+    transition: all linear .5s;
+}
+
+input.bot:hover {
+    border-radius: 10px;
+    background-color: orange;
+    transition: all linear .5s;
+}
